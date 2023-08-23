@@ -1,0 +1,88 @@
+.conteudo-bike{
+    padding: 20px;
+    height: 700px;
+    position: relative;
+    gap: 15px;
+    /* border: solid 2px black; */
+}
+
+.conteudo-bike h2{
+    margin-bottom: 40px;
+}
+
+.cards{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    padding: 0 20px 20px 20px;
+    max-width: 1400px;
+    gap: 40px;
+    overflow-x: auto;
+}
+.cards img{
+    border-radius: 15px;
+    min-width: 280px;
+}
+
+.cada-card h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font: 600 2rem/1.25 "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.cada-card h3::before{
+    content: "";
+    display: inline-block;
+    height: 8px;
+    width: 12px;
+    margin-right: 8px;
+    background-color: var(--cor-p1);
+    transition: width 0.2s;
+}
+
+.conteudo-bike a:hover h3::before {
+    width: 24px;
+}
+
+.cada-card p{
+    padding-left: 20px; /*Soma da largura (12) com a margin (8) */
+}
+
+
+@media (max-width: 500px) {
+    .conteudo-bike {
+        gap: 15px;
+        margin-bottom: -120px;
+    }
+    .conteudo-bike img {
+        height: 80%;
+        width: 330px;
+    }
+    .cards{
+        padding-left: 20px;
+        padding-right: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .p1{
+        text-align: start;
+    }
+    .cada-card {
+        padding: 15px;
+    }
+
+}
+
+section { 
+    transition-property: all; 
+    transition-duration: 0.3s; 
+    transition-timing-function: ease;
+    transition-delay: 1s;
+}
+section { 
+    transition : 
+    all 0.3s ease 1s; 
+}
